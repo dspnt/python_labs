@@ -1,1 +1,1 @@
-# python_labs
+name = input()
