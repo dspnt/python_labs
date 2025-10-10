@@ -1,0 +1,6 @@
+fio = (input('ФИО:'))
+fio1 = fio.split()
+norm_fio = ' '.join(fio1)
+initial = ''.join([x[0].upper() for x in fio1])
+print(F'Инициалы:{initial}.')
+print(F'Длинна:{len(norm_fio)}')
