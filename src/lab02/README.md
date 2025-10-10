@@ -23,7 +23,7 @@ def unique_sorted(nums: list[float or int]) -> list[float or int]:
     nums.sort()
     return(nums)
 ```
-![47](/images/lab1/arrays2.png)
+![47](/images/lab2/arrays2.png)
 ## Задание flatten
 ```python
 def flatten(mat: list[list or tuple]) -> list:
@@ -37,7 +37,7 @@ def flatten(mat: list[list or tuple]) -> list:
             a.append(b)
     return(a)
 ```
-![47](/images/lab1/arrays3.png)
+![47](/images/lab2/arrays3.png)
 
 # Задание 2
 ## transpose
@@ -62,7 +62,7 @@ def transpose(mat: list[list[float or int]]) -> list[list]:
         a.append(b)
     return a
 ```
-![47](/images/lab1/matrix1.png)
+![47](/images/lab2/matrix1.png)
 ## row_sums
 ```python
 def row_sums(mat: list[list[float or int]]) -> list[float]:
@@ -83,7 +83,7 @@ def row_sums(mat: list[list[float or int]]) -> list[float]:
         a.append(sm)
     return(a)
 ```
-![47](/images/lab1/matrix2.png)
+![47](/images/lab2/matrix2.png)
 ## col_sums
 ```python
 def col_sums(mat: list[list[float or int]]) -> list[float]:
@@ -104,7 +104,7 @@ def col_sums(mat: list[list[float or int]]) -> list[float]:
         a.append(b)
     return(a)
 ```
-![47](/images/lab1/matrix3.png)
+![47](/images/lab2/matrix3.png)
 
 # Задание 3
 ```python
@@ -127,4 +127,4 @@ def format_record(rec: tuple[str, str, float]):
     form_gpa=f"{gpa:.2f}"
     return f"{fam} {initials}, гр. {group}, GPA {form_gpa}"
 ```
-![47](/images/lab1/tuples.png)
+![47](/images/lab2/tuples.png)
