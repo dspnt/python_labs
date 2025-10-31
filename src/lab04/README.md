@@ -61,5 +61,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-![47](/images/lab4/img01.png)
 ```
+![47](/images/lab4/img01.png)
