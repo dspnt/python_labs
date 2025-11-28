@@ -1,4 +1,4 @@
-# Лабораторная работа №4
+# Лабораторная работа №5
 
 ## A (json <-> csv)
 
@@ -17,7 +17,6 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
             data = json.load(f)
     except json.JSONDecodeError as e:
         raise ValueError(f"Ошибка декодирования JSON: {e}")
-    if not isinstance(data, list):
         raise ValueError("JSON должен содержать список объектов")
     if not data:
         raise ValueError("JSON файл пуст")
