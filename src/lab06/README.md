@@ -41,8 +41,7 @@ def stats_command(input_file, top_count=5):
         
         if not text.strip():
             raise ValueError('Файл пуст')
-        
-        # Используем функции из lab03
+            
         normalized_text = normalize(text, casefold=True, yo2e=True)
         tokens = tokenize(normalized_text)
         total_words = len(tokens)
