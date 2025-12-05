@@ -1,6 +1,8 @@
 import sys
-sys.path.append('./src/lib')
-from text_stats import * 
+
+sys.path.append("./src/lib")
+from text_stats import *
+
 string = sys.stdin.readline()
 tokenize = tokenize(string)
 unique_words = count_freq(tokenize)

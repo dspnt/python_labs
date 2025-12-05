@@ -7,7 +7,7 @@ def transpose(mat: list[list[float or int]]) -> list[list]:
         if len(i) != ln:
             raise TypeError('"ValueError"')
     if not isinstance(mat, list):
-        raise TypeError('TypeError')
+        raise TypeError("TypeError")
     a = []
     sr = len(mat)
     st = len(mat[0])
@@ -18,6 +18,7 @@ def transpose(mat: list[list[float or int]]) -> list[list]:
         a.append(b)
     return a
 
+
 def row_sums(mat: list[list[float or int]]) -> list[float]:
     if len(mat) == 0:
         return []
@@ -27,15 +28,16 @@ def row_sums(mat: list[list[float or int]]) -> list[float]:
         if len(i) != ln:
             raise TypeError('"ValueError"')
     if not isinstance(mat, list):
-        raise TypeError('TypeError')
+        raise TypeError("TypeError")
     a = []
     for i in mat:
         sm = 0
         for j in i:
             sm += j
         a.append(sm)
-    return(a)
- 
+    return a
+
+
 def col_sums(mat: list[list[float or int]]) -> list[float]:
     if len(mat) == 0:
         return []
@@ -45,12 +47,11 @@ def col_sums(mat: list[list[float or int]]) -> list[float]:
         if len(i) != ln:
             raise TypeError('"ValueError"')
     if not isinstance(mat, list):
-        raise TypeError('TypeError')
+        raise TypeError("TypeError")
     a = []
     for i in range(len(mat[0])):
         b = 0
         for j in range(len(mat)):
             b += mat[j][i]
         a.append(b)
-    return(a)
-
+    return a

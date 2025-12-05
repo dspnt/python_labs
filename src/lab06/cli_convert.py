@@ -3,17 +3,17 @@ def main(argv=None):
         argv = sys.argv[1:]
 
     parser = build_parser()
-    
-    if not argv or any(arg in argv for arg in ('-h', '--help')):
+
+    if not argv or any(arg in argv for arg in ("-h", "--help")):
         parser.print_help()
         return
-        
+
     args = parser.parse_args(argv)
 
     command_handlers = {
-        'json2csv': json_to_csv,
-        'csv2json': csv_to_json,
-        'csv2xlsx': csv_to_xlsx
+        "json2csv": json_to_csv,
+        "csv2json": csv_to_json,
+        "csv2xlsx": csv_to_xlsx,
     }
 
     try:
@@ -22,7 +22,7 @@ def main(argv=None):
 
         command_handlers[args.command](args.input, args.output)
         print(f"Файл создан: {args.output}")
-        
+
     except FileNotFoundError as e:
         print(f"Ошибка: {e}")
         sys.exit(1)
