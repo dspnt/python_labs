@@ -102,7 +102,7 @@ def test_full_pipeline():
 mport pytest
 import json
 import csv
-from lab05.json_csv import json_to_csv, csv_to_json
+from src.lab05.json_csv import json_to_csv, csv_to_json
 
 
 class TestJsonToCsv:
@@ -259,5 +259,6 @@ class TestIntegration:
 ## Result
 
 ![47](/images/lab7/img01.png)
+![47](/images/lab7/img04.png)
 ![47](/images/lab7/img02.png)
 ![47](/images/lab7/img03.png)
