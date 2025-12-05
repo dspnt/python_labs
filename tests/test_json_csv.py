@@ -1,7 +1,9 @@
 import pytest
 import json
 import csv
-from lab05.json_csv import json_to_csv, csv_to_json
+
+
+from src.lab05.json_csv import json_to_csv, csv_to_json
 
 
 class TestJsonToCsv:
