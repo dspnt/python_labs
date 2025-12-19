@@ -1,6 +1,6 @@
-# Лабораторная работа №8
+# Лабораторная работа №9
 
-## A
+## ----
 ```python 
 import csv
 from pathlib import Path
